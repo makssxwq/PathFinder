@@ -1,0 +1,97 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  header {
+    background-color: #4caf50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  h1, h2 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+  }
+  
+  .content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  /* Список студентов */
+  .student-list {
+    width: 30%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  .student-list ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .student-list li {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .student-list li:hover {
+    background-color: #e8f5e9;
+  }
+  
+  /* Данные об успеваемости */
+  .performance-data {
+    flex: 1;
+    padding: 1rem;
+    overflow-y: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  table th, table td {
+    border: 1px solid #ddd;
+    padding: 0.75rem;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  table tr:hover {
+    background-color: #e8f5e9;
+  }
+  
+  /* Сообщения о загрузке или отсутствии данных */
+  p {
+    color: #666;
+    font-style: italic;
+  }  
